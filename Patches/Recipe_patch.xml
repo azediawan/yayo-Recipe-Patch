@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Materials - Metals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Always</success>
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Yayo's Combat 3 [Adopted]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Always</success>
+						<operations>
+
+							<!-- PRIMITIVE -->
+
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Bronze</li>
+													<li>VMEu_Iron</li>
+												</thingDefs>
+											</filter>
+											<count>15</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>WoodLog</li>
+												</thingDefs>
+												<!-- <categories>
+													<li>StoneBlocks</li>
+												</categories> -->
+											</filter>
+											<count>15</count>
+										</li>
+
+									</ingredients>
+									<fixedIngredientFilter>
+										<thingDefs>
+											<li>WoodLog</li>
+											<li>VMEu_Iron</li>
+											<li>VMEu_Bronze</li>
+										</thingDefs>
+										<!-- <categories>
+											<li>StoneBlocks</li>
+										</categories> -->
+									</fixedIngredientFilter>
+									<defaultIngredientFilter>
+										<thingDefs>
+											<li>WoodLog</li>
+											<li>VMEu_Iron</li>
+											<li>VMEu_Bronze</li>
+										</thingDefs>
+										<!-- <categories>
+											<li>StoneBlocks</li>
+										</categories> -->
+									</defaultIngredientFilter>
+								</value>
+							</li>
+							<!-- PRIMITIVE X10 -->
+
+							<!-- <li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive10"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>WoodLog</li>
+												</thingDefs>
+											</filter>
+											<count>150</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Iron</li>
+													<li>VMEu_Copper</li>
+													<li>VMEu_Bronze</li>
+												</thingDefs>
+												<categories>
+													<li>StoneBlocks</li>
+												</categories>
+											</filter>
+											<count>150</count>
+										</li>
+									</ingredients>
+									<fixedIngredientFilter>
+										<thingDefs>
+											<li>WoodLog</li>
+											<li>VMEu_Iron</li>
+											<li>VMEu_Cooper</li>
+											<li>VMEu_Bronze</li>
+										</thingDefs>
+										<categories>
+											<li>StoneBlocks</li>
+										</categories>
+									</fixedIngredientFilter>
+									<defaultIngredientFilter>
+										<thingDefs>
+											<li>WoodLog</li>
+											<li>VMEu_Iron</li>
+											<li>VMEu_Cooper</li>
+											<li>VMEu_Bronze</li>
+										</thingDefs>
+										<categories>
+											<li>StoneBlocks</li>
+										</categories>
+									</defaultIngredientFilter>
+								</value>
+							</li> -->
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
