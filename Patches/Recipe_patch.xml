@@ -24,7 +24,7 @@
 										<li>
 											<filter>
 												<thingDefs>
-													<li>VMEu_Bronze</li>
+													<!-- <li>VMEu_Bronze</li> -->
 													<li>VMEu_Iron</li>
 												</thingDefs>
 											</filter>
