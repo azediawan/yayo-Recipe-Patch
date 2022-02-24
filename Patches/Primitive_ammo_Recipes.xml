@@ -5,14 +5,14 @@
 			<li>Expanded Materials - Metals</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
+			<success>Normal</success>
 			<operations>
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Yayo's Combat 3 [Adopted]</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
+						<success>Normal</success>
 						<operations>
 
 							<!-- PRIMITIVE -->

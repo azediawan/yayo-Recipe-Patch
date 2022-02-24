@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- resolver problema de industiral bulk nao funcionar corretamente
-resolver problema de itens no primitive nao estar ativos por padrao OK -->
+
 <Patch>
-	<Operation Class="PatchOperationFindMod">
+	<!-- <Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Expanded Materials - Metals</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
+			<success>Invert</success>
 			<operations>
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Yayo's Combat 3 [Adopted]</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
-						<operations>
-
-							<!-- Industrial -->
-
-							<li Class="PatchOperationReplace">
+						<success>Invert</success>
+						<operations> -->
+							<Operation Class="PatchOperationReplace">
 								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial"]/ingredients</xpath>
 								<value>
 									<ingredients>
@@ -50,9 +46,9 @@ resolver problema de itens no primitive nao estar ativos por padrao OK -->
                                         </li>
 									</ingredients>
 								</value>
-							</li>
-							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial"]/fixedIngredientFilter</xpath>
+							</Operation>
+							<Operation Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial" or defName="Make_yy_ammo_industrial10"]/fixedIngredientFilter</xpath>
 								<value>
 									<fixedIngredientFilter>
 										<thingDefs>
@@ -61,22 +57,9 @@ resolver problema de itens no primitive nao estar ativos por padrao OK -->
 										</thingDefs>
 									</fixedIngredientFilter>
 								</value>
-							</li>
-							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial"]/defaultIngredientFilter</xpath>
-								<value>
-									<defaultIngredientFilter>
-										<thingDefs>
-											<li>VMEu_Coal</li>
-											<li>VMEu_Charcoal</li>
-										</thingDefs>
-									</defaultIngredientFilter>
-								</value>
-							</li>
-
-                            <!-- INDUSTRIAL BULK RECIPE -->
-                            <li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName= "Make_yy_ammo_industrial10"]/ingredients</xpath>
+							</Operation>
+                            <Operation Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial10"]/ingredients</xpath>
 								<value>
 									<ingredients>
 										<li>
@@ -106,9 +89,9 @@ resolver problema de itens no primitive nao estar ativos por padrao OK -->
 										</li>
 									</ingredients>
 								</value>
-							</li>
-							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef/[defName="Make_yy_ammo_industrial10"]/fixedIngredientFilter</xpath>
+							</Operation>
+							<!-- <Operation Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef/[defName = "Make_yy_ammo_industrial10"]/fixedIngredientFilter</xpath>
 								<value>
 									<fixedIngredientFilter>
 										<thingDefs>
@@ -117,8 +100,8 @@ resolver problema de itens no primitive nao estar ativos por padrao OK -->
 										</thingDefs>
 									</fixedIngredientFilter>
 								</value>
-							</li>
-							<li Class="PatchOperationReplace">
+							</Operation>
+							<Operation Class="PatchOperationReplace">
 								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial10"]/defaultIngredientFilter</xpath>
 								<value>
 									<defaultIngredientFilter>
@@ -128,11 +111,11 @@ resolver problema de itens no primitive nao estar ativos por padrao OK -->
 										</thingDefs>
 									</defaultIngredientFilter>
 								</value>
-							</li>
-						</operations>
+							</Operation> -->
+						<!-- </operations>
 					</match>
 				</li>
 			</operations>
 		</match>
-	</Operation>
+	</Operation> -->
 </Patch>
