@@ -105,6 +105,55 @@
 									</ingredients>
 								</value>
 							</li>
+
+							<!-- Primitive Fire/Bomb/Smoke -->
+
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive_fire"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>Chemfuel</li>
+												</thingDefs>
+											</filter>
+											<count>6</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>WoodLog</li>
+												</thingDefs>
+											</filter>
+											<count>6</count>
+										</li>
+									</ingredients>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive_fire10"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>Chemfuel</li>
+												</thingDefs>
+											</filter>
+											<count>60</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>WoodLog</li>
+												</thingDefs>
+											</filter>
+											<count>60</count>
+										</li>
+									</ingredients>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
