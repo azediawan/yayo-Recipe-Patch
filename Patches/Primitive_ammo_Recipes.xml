@@ -46,7 +46,7 @@
 								</value>
 							</li>
 							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"]/fixedIngredientFilter</xpath>
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"or defName="Make_yy_ammo_primitive10"]/fixedIngredientFilter</xpath>
 								<value>
 									<fixedIngredientFilter>
 										<thingDefs>
@@ -62,7 +62,7 @@
 								</value>
 							</li>
 							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"]/defaultIngredientFilter</xpath>
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"or defName="Make_yy_ammo_primitive10"]/defaultIngredientFilter</xpath>
 								<value>
 									<defaultIngredientFilter>
 										<thingDefs>
@@ -105,39 +105,6 @@
 									</ingredients>
 								</value>
 							</li>
-							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive10"]/fixedIngredientFilter</xpath>
-								<value>
-									<fixedIngredientFilter>
-										<thingDefs>
-											<li>VMEu_Iron</li>
-											<li>VMEu_Bronze</li>
-											<li>VMEu_Copper</li>
-											<li>WoodLog</li>
-										</thingDefs>
-										<categories>
-											<li>StoneBlocks</li>
-										</categories>
-									</fixedIngredientFilter>
-								</value>
-							</li>
-							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive10"]/defaultIngredientFilter</xpath>
-								<value>
-									<defaultIngredientFilter>
-										<thingDefs>
-											<li>VMEu_Iron</li>
-											<li>VMEu_Bronze</li>
-											<li>VMEu_Copper</li>
-											<li>WoodLog</li>
-										</thingDefs>
-										<categories>
-											<li>StoneBlocks</li>
-										</categories>
-									</defaultIngredientFilter>
-								</value>
-							</li>
-
 						</operations>
 					</match>
 				</li>
