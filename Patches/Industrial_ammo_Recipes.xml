@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Expanded Materials - Metals</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Yayo's Combat 3 [Adopted]</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<success>Normal</success>
+						<operations>
+
+							<!-- Industrial -->
+
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Coal</li>
+													<li>VMEu_Charcoal</li>
+												</thingDefs>
+											</filter>
+											<count>15</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Copper</li>
+												</thingDefs>
+											</filter>
+											<count>2</count>
+										</li>
+                                        <li>
+                                            <filter>
+                                                <thingDefs>
+													<li>VMEu_Lead</li>
+                                                </thingDefs>
+                                            </filter>
+                                            <count>3</count>
+                                        </li>
+									</ingredients>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial" or defName="Make_yy_ammo_industrial10"]/fixedIngredientFilter</xpath>
+								<value>
+									<fixedIngredientFilter>
+										<thingDefs>
+											<li>VMEu_Coal</li>
+											<li>VMEu_Charcoal</li>
+										</thingDefs>
+									</fixedIngredientFilter>
+								</value>
+							</li>
+                            <li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial10"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Coal</li>
+													<li>VMEu_Charcoal</li>
+												</thingDefs>
+											</filter>
+											<count>150</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Copper</li>
+												</thingDefs>
+											</filter>
+											<count>20</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Lead</li>
+												</thingDefs>
+											</filter>
+											<count>30</count>
+										</li>
+									</ingredients>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

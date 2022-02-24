@@ -5,14 +5,14 @@
 			<li>Expanded Materials - Metals</li>
 		</mods>
 		<match Class="PatchOperationSequence">
-			<success>Always</success>
+			<success>Normal</success>
 			<operations>
 				<li Class="PatchOperationFindMod">
 					<mods>
 						<li>Yayo's Combat 3 [Adopted]</li>
 					</mods>
 					<match Class="PatchOperationSequence">
-						<success>Always</success>
+						<success>Normal</success>
 						<operations>
 
 							<!-- PRIMITIVE -->
@@ -46,7 +46,7 @@
 								</value>
 							</li>
 							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"]/fixedIngredientFilter</xpath>
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"or defName="Make_yy_ammo_primitive10"]/fixedIngredientFilter</xpath>
 								<value>
 									<fixedIngredientFilter>
 										<thingDefs>
@@ -62,7 +62,7 @@
 								</value>
 							</li>
 							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"]/defaultIngredientFilter</xpath>
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive"or defName="Make_yy_ammo_primitive10"]/defaultIngredientFilter</xpath>
 								<value>
 									<defaultIngredientFilter>
 										<thingDefs>
@@ -77,7 +77,34 @@
 									</defaultIngredientFilter>
 								</value>
 							</li>
-
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive10"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Iron</li>
+													<li>VMEu_Bronze</li>
+													<li>VMEu_Copper</li>
+												</thingDefs>
+												<categories>
+													<li>StoneBlocks</li>
+												</categories>
+											</filter>
+											<count>150</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>WoodLog</li>
+												</thingDefs>
+											</filter>
+											<count>150</count>
+										</li>
+									</ingredients>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
