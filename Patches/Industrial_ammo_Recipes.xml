@@ -80,7 +80,7 @@
 													<li>VMEu_Copper</li>
 												</thingDefs>
 											</filter>
-											<count>20</count>
+											<count>4</count>
 										</li>
 										<li>
 											<filter>
@@ -226,7 +226,7 @@
 													<li>VMEu_Copper</li>
 												</thingDefs>
 											</filter>
-											<count>20</count>
+											<count>4</count>
 										</li>
 									</ingredients>
 								</value>
