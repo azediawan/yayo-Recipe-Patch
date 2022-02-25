@@ -159,17 +159,21 @@
 
 							<!-- Special Spacer ammo -->
 
-							<!-- <li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive_emp"]/ingredients</xpath>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_spacer_emp"]/ingredients</xpath>
 								<value>
 									<ingredients>
 										<li>
 											<filter>
 												<thingDefs>
-													<li>VMEu_StainlessSteel</li>
-													<li>VMEu_Titanium</li>
-													<li>VMEu_Bronze</li>
-													<li>Steel</li>
+													<li>ComponentIndustrial</li>
+												</thingDefs>
+											</filter>
+											<count>6</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
 													<li>Plasteel</li>
 												</thingDefs>
 											</filter>
@@ -178,25 +182,29 @@
 										<li>
 											<filter>
 												<thingDefs>
-													<li>WoodLog</li>
+													<li>VMEu_Lithium</li>
 												</thingDefs>
 											</filter>
-											<count>6</count>
+											<count>2</count>
 										</li>
 									</ingredients>
 								</value>
 							</li>
 							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive_emp10"]/ingredients</xpath>
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_spacer_emp10"]/ingredients</xpath>
 								<value>
 									<ingredients>
 										<li>
 											<filter>
 												<thingDefs>
-													<li>VMEu_StainlessSteel</li>
-													<li>VMEu_Titanium</li>
-													<li>VMEu_Bronze</li>
-													<li>Steel</li>
+													<li>ComponentIndustrial</li>
+												</thingDefs>
+											</filter>
+											<count>60</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
 													<li>Plasteel</li>
 												</thingDefs>
 											</filter>
@@ -205,29 +213,14 @@
 										<li>
 											<filter>
 												<thingDefs>
-													<li>WoodLog</li>
+													<li>VMEu_Lithium</li>
 												</thingDefs>
 											</filter>
-											<count>60</count>
+											<count>2</count>
 										</li>
 									</ingredients>
 								</value>
 							</li>
-							<li Class="PatchOperationReplace">
-								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_primitive_emp"or defName="Make_yy_ammo_primitive_emp10"]/fixedIngredientFilter</xpath>
-								<value>
-									<fixedIngredientFilter>
-										<thingDefs>
-											<li>VMEu_StainlessSteel</li>
-											<li>VMEu_Titanium</li>
-											<li>VMEu_Bronze</li>
-											<li>Steel</li>
-											<li>WoodLog</li>
-											<li>Plasteel</li>
-										</thingDefs>
-									</fixedIngredientFilter>
-								</value>
-							</li> -->
 						</operations>
 					</match>
 				</li>
