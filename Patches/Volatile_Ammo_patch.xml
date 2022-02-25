@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+    <!-- <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Yayo's Combat 3 [Adopted]</li>
+		</mods> -->
+		<Operation Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+                <li Class="PatchOperationInsert">
+					<xpath>/Defs/ThingDef[defName = "yy_ammo_industrial"]/graphicData</xpath>
+					<value>
+                        <comps>
+                            <li Class="CompProperties_Explosive">
+                                <explosiveRadius>0.2</explosiveRadius>
+                                <explosiveDamageType>Ammoincident</explosiveDamageType>
+                                <explosiveExpandPerStackcount>0.1</explosiveExpandPerStackcount>
+                                <startWickHitPointsPercent>1</startWickHitPointsPercent>
+                                <wickTicks>30~45</wickTicks>
+                            </li>
+                        </comps>
+                    </value>
+                </li>
+            </operations>
+        </Operation>
+    <!-- </Operation> -->
+
+
+</Patch>

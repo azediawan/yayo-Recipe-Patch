@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<Defs>
+    <DamageDef>
+        <defName>Ammoincident</defName>
+        <label>Ammunition Accident</label>
+        <workerClass>DamageWorker_AddInjury</workerClass>
+        <externalViolence>true</externalViolence>
+        <isExplosive>true</isExplosive>
+        <deathMessage>{0} has died in Ammunition Incident</deathMessage>
+        <hediff>Gunshot</hediff>
+        <hediffSolid>Cut</hediffSolid>
+        <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+        <impactSoundType>Blunt</impactSoundType>
+        <armorCategory>Sharp</armorCategory>
+        <minDamageToFragment>10</minDamageToFragment>
+        <defaultDamage>20</defaultDamage>
+        <defaultStoppingPower>0.2</defaultStoppingPower>
+        <defaultArmorPenetration>0.7</defaultArmorPenetration>
+        <buildingDamageFactorImpassable>2</buildingDamageFactorImpassable>
+        <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+        <plantDamageFactor>1</plantDamageFactor>
+        <explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+        <explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+        <explosionCellFleck>BlastDry</explosionCellFleck>
+        <explosionColorCenter>(1, 0.5, 0.3)</explosionColorCenter>
+        <explosionColorEdge>(0.6, 0.5, 0.4)</explosionColorEdge>
+        <soundExplosion>Shot_MachinePistol</soundExplosion>
+        <combatLogRules>Damage_Bomb</combatLogRules>
+    </DamageDef>
+</Defs>
