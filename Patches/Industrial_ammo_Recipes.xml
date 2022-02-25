@@ -93,6 +93,144 @@
 									</ingredients>
 								</value>
 							</li>
+
+							<!-- Industrial Explosive -->
+
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial_fire"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>Chemfuel</li>
+												</thingDefs>
+											</filter>
+											<count>6</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Copper</li>
+												</thingDefs>
+											</filter>
+											<count>2</count>
+										</li>
+									</ingredients>
+								</value>
+							</li>
+                            <li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial_fire10"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>Chemfuel</li>
+												</thingDefs>
+											</filter>
+											<count>60</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Copper</li>
+												</thingDefs>
+											</filter>
+											<count>4</count>
+										</li>
+									</ingredients>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial_fire" or defName="Make_yy_ammo_industrial_fire10"]/fixedIngredientFilter</xpath>
+								<value>
+									<fixedIngredientFilter>
+										<thingDefs>
+											<li>Chemfuel</li>
+											<li>VMEu_Copper</li>
+										</thingDefs>
+									</fixedIngredientFilter>
+								</value>
+							</li>
+							
+							<!-- Industrial EMP -->
+							
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial_emp"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Coal</li>
+													<li>VMEu_Charcoal</li>
+												</thingDefs>
+											</filter>
+											<count>4</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Copper</li>
+												</thingDefs>
+											</filter>
+											<count>2</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>ComponentIndustrial</li>
+												</thingDefs>
+											</filter>
+											<count>1</count>
+										</li>
+									</ingredients>
+								</value>
+							</li>
+							<li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial_emp" or defName="Make_yy_ammo_industrial_emp10"]/fixedIngredientFilter</xpath>
+								<value>
+									<fixedIngredientFilter>
+										<thingDefs>
+											<li>VMEu_Coal</li>
+											<li>VMEu_Charcoal</li>
+										</thingDefs>
+									</fixedIngredientFilter>
+								</value>
+							</li>
+                            <li Class="PatchOperationReplace">
+								<xpath>/Defs/RecipeDef[defName = "Make_yy_ammo_industrial_emp10"]/ingredients</xpath>
+								<value>
+									<ingredients>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Coal</li>
+													<li>VMEu_Charcoal</li>
+												</thingDefs>
+											</filter>
+											<count>40</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>ComponentIndustrial</li>
+												</thingDefs>
+											</filter>
+											<count>10</count>
+										</li>
+										<li>
+											<filter>
+												<thingDefs>
+													<li>VMEu_Copper</li>
+												</thingDefs>
+											</filter>
+											<count>20</count>
+										</li>
+									</ingredients>
+								</value>
+							</li>
 						</operations>
 					</match>
 				</li>
